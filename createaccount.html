@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="{{ url_for ('static', filename='style_createaccount.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account (Holiday Leave)</title>
+</head>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Natwest-logo.jpg"  alt="NatWest Logo" width="140" height="40" />
+</header>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-box">
+      <img src="https://www.natwestgroup.com/who-we-are/our-brands/natwest/_jcr_content/root/responsivegrid/container_522698183/herobanner/illustrationview_image.coreimg.png/1716386751733/natwest-logo-hero-340x226.png" alt="NatWest Logo" width="340" height="226" />
+      <h2>Holiday Leave (Create Account)</h2>
+      
+      <form action="/home" method="POST">
+          <div class = "form-group">
+            <input type="radio" id="employee" name="role" value="employee">
+            <label for="employee">Employee</label>
+        
+            <input type="radio" id="manager" name="role" value="manager">
+            <label for="manager">Manager</label>
+          </div>
+          
+          <div class="form-group">
+          <label for="Username">Username</label>
+          <input type="text" id="Username" name="Username" maxLength="69" required>
+          </div>
+
+          <div class="form-group">
+            <label for="emailaddress">Email Address</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+          <label for="password">PIN or Password</label>
+          <input type="password" id="password" name="password" minLength="8" maxLength "20" required>
+          </div>
+
+          <button type="submit" class="login-button">Log In</button>
+        </form>
+      <div class="note">
+        Already have an account? <a href= "/login"> Log in </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

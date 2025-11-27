@@ -1,0 +1,101 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #4b0082; 
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  color: #4b0082;
+  margin-top: 0;
+}
+
+.balance {
+  font-size: 32px;
+  font-weight: bold;
+  color: #008272; /* NatWest green tone */
+}
+
+.button {
+  background-color: #4b0082;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 3px;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;  
+  font-weight: bold; 
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.button:hover::after {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 16px;
+  background-color: #eee;
+  color: #666;
+}
+
+
+
+
+
